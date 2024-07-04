@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product-details">
+        <div class="product-image-gallery">
+            <img src="https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Product Image" class="main-image" id="mainImage">
+            <div class="thumbnail-images">
+                <img src="https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Thumbnail 1" class="thumbnail">
+                <img src="https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Thumbnail 2" class="thumbnail">
+                <img src="https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Thumbnail 3" class="thumbnail">
+                <img src="https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Thumbnail 4" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1 class="marmeto">Marmeto</h1>
+            <h1 class="underline"></h1>
+            <h1 class="product-name">Embrace Sideboard</h1>
+            
+            <div class="product-price">
+                <span class="current-price">$12999.00</span>
+                <span class="discount-price">$19999.00</span>
+                <span class="discount-percentage">35% Off</span>
+                <h1 class="underlineP"></h1>
+            </div>
+            <div class="product-options">
+                <div class="color-options">
+                    <label>Choose a Color:</label>
+                    <div class="colors">
+                        <span class="color-option" data-color="Pink" style="background-color: burlywood"></span>
+                        <span class="color-option" data-color="Pink"
+                            style="background-color: rgb(112, 151, 112)"></span>
+                        <span class="color-option" data-color="LightPink"
+                            style="background-color:rgb(99, 137, 214)"></span>
+                        <span class="color-option" data-color="LightBlue"
+                            style="background-color: rgb(227, 112, 131)"></span>
+                            <h1 class="underlineC"></h1>
+                    </div>
+                </div>
+                <div class="size-options">
+                    <label>Choose a Size:</label>
+                    <div class="sizes">
+                        <label class="ra"><input type="radio" name="size" value="Small"> Small</label>
+                        <label class="ra"><input type="radio" name="size" value="Medium"> Medium</label>
+                        <label class="ra"><input type="radio" name="size" value="Large"> Large</label>
+                        <label class="ra"><input type="radio" name="size" value="Extra Large"> Extra Large</label>
+                        <label class="ra"><input type="radio" name="size" value="XXL"> XXL</label>
+                    </div>
+                </div>
+            </div>
+            <div class="quantity">
+                <div class="quantity1">
+                    <button class="quantity-btn" id="decreaseQty">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button class="quantity-btn" id="increaseQty">+</button>
+                </div>
+                <button class="add-to-cart" id="addToCart">Add to Cart</button>
+                <h1 class="underlineA"></h1>
+            </div>
+
+            <p class="product-description">
+                The Embrace Sideboard is a stylish wear.With a top cloth designed to provide superior protection and
+                look great,this storage solution is both functional and attractive.It fits seamlessly into any hone
+                decor,with clean lines and a timeless look.Crafted from premium materials for a combination of
+                style,durability and reliability
+            </p>
+            <div class="cart-message" id="cartMessage" style="display: none;">
+                <p>Product added to cart:</p>
+                <p id="cartProductDetails"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
